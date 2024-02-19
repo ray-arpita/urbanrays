@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cardo&family=Dancing+Script:wght@700&family=Henny+Penny&family=Protest+Guerrilla&family=Protest+Revolution&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cardo&family=Dancing+Script:wght@700&family=Henny+Penny&family=Kode+Mono:wght@400..700&family=Protest+Guerrilla&family=Protest+Revolution&family=Protest+Strike&display=swap');
+
+
+.label {
+    font-family: "Protest Revolution", sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  font-size: 28px !important;
+
+}
+.subheader{
+    font-family: "Kode Mono", monospace !important;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
