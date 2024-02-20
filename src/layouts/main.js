@@ -4,6 +4,11 @@ import Navbar from './navbar/navbar'
 import Banner from './banner/banner'
 import FashionSection from './second-section/fashionsection'
 import SliderSection from './slider/slider'
+import CommonCard from '../components/commonCard'
+import ShowcaseSection from './showcaseSection'
+import DiscoverSection from './discover/discoverSection'
+import Newsletter from './newsletter/newsletter'
+import Footer from './footer/footer'
 
 const Main = () => {
   return (
@@ -11,8 +16,12 @@ const Main = () => {
   <Navbar/>
   <Banner/>
   <FashionSection/>
-  <SliderSection/>
-
+  <ShowcaseSection/>
+  <DiscoverSection/>
+  <Newsletter/>
+  <Footer/>
+  {/* <SliderSection/> */}
+  {/* <CommonCard/> */}
    </Grid>
   )
 }

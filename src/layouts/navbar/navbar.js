@@ -4,7 +4,7 @@ import './navbar.css';
 
 const Navbar = () => {
   return (
-    <Grid container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' , paddingBlock :  '20px'}}>
+    <Grid container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' ,alignItems : 'center' , paddingBlock :  '20px'}}>
       <Grid item>
         <Grid container sx={{ display: 'flex', justifyContent: 'space-around' ,gap : '38px' }}>
           <Grid item sx={{marginLeft : '8px'}}>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cardo&family=Dancing+Script:wght@700&family=Henny+Penny&family=Kode+Mono:wght@400..700&family=Protest+Guerrilla&family=Protest+Revolution&family=Protest+Strike&display=swap');
+
+.cardImage {width: 277px;height : 277px ; object-fit: cover;object-position: center;}
+.cardText { font-optical-sizing: auto;font-weight: bold; font-style: normal;}
+.addToCartIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%; 
+    padding: 4px;
+    margin : 6px;
+    cursor : pointer;
+}
