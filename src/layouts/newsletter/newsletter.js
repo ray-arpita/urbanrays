@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography , Divider } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import CustomButton from "../../components/button/button";
 
 const Newsletter = () => {
