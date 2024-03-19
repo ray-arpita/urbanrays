@@ -3,10 +3,10 @@ import { Card, Typography } from "@mui/material";
 import "./commonCard.css";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import StarRatings from "react-star-ratings";
-import Snackbar from "@mui/material/Snackbar";
+import { Link } from "react-router-dom";
 
 const CommonCard = ({ title, price, rating, image , description}) => {
-  const [open, setOpen] = React.useState(false);
+
 
   const AddToCart = () => {
     alert('Product Added To Cart ')
@@ -15,6 +15,7 @@ const CommonCard = ({ title, price, rating, image , description}) => {
 
   return (
     <>
+       
       <div
         style={{
           backgroundColor: "white",
@@ -22,6 +23,7 @@ const CommonCard = ({ title, price, rating, image , description}) => {
           maxWidth: "280px",
           padding: "10px",
           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
+        
         }}
       >
         <div>
@@ -67,6 +69,7 @@ const CommonCard = ({ title, price, rating, image , description}) => {
     
         </div>
       </div>
+     
     </>
   );
 };

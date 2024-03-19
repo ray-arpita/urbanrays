@@ -7,9 +7,19 @@ import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import CustomButton from "../../components/button/button";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
+import { useSearchParams, Link } from "react-router-dom";
 
 const Shop = () => {
   const [productList, setProductList] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const filterKey = searchParams.get("category"); //key
+  console.log(searchParams.get("category"), "<<< SEARCH PARAMS");
+
+  const DisplayProducts = filterKey
+    ? productList.filter(
+        (product) => product.category.toLowerCase() == filterKey
+      )
+    : productList;
 
   useEffect(() => {
     setProductList(Products);
@@ -18,34 +28,52 @@ const Shop = () => {
   return (
     <>
       <Divider />
-      <Typography fontWeight = {'bold'} fontSize = {'22px'} className="subheader" py={3}>
+      <Typography
+        fontWeight={"bold"}
+        fontSize={"22px"}
+        className="subheader"
+        py={3}
+      >
         Explore Now With Our Best Collections
       </Typography>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
-          gap : '3%',
+          gap: "3%",
           paddingTop: "8px",
         }}
       >
-        <CustomButton label={"Sunglasses"} />
-        <CustomButton label={"Bags"} />
-        <CustomButton label={"Shoes"} />
+        <div onClick={() => setSearchParams({ category: "sunglasses" })}>
+          <CustomButton label={"Sunglasses"} />
+        </div>
+        <Link to="?category=bags">
+          <CustomButton label={"Bags"} />
+        </Link>
+        <Link to="?category=shoes">
+          <CustomButton label={"Shoes"} />
+        </Link>
+        {filterKey ? (
+          <Link to=".">
+            <CustomButton label={"Show All"} />
+          </Link>
+        ) : null}
       </div>
       <div
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
-        {productList?.length > 0 ? (
-          productList.map((product) => (
+        {DisplayProducts?.length > 0 ? (
+          DisplayProducts.map((product) => (
             <Box key={product.id} p={2}>
-              <CommonCard
-                title={product?.productTitle}
-                price={product?.price}
-                rating={product?.rating}
-                image={product?.productImage}
-                description={product?.description}
-              />
+              <Link to={`/product-detail/${product.id}`}>
+                <CommonCard
+                  title={product?.productTitle}
+                  price={product?.price}
+                  rating={product?.rating}
+                  image={product?.productImage}
+                  description={product?.description}
+                />
+              </Link>
             </Box>
           ))
         ) : (
