@@ -44,7 +44,7 @@ const FashionSection = () => {
         </Grid>
 
         {/* Third Column */}
-        <Grid item xs={12} sm={6} md={4} mt={5}>
+        <Grid item xs={12} sm={12} md={4} mt={5}>
           <img
             src={imageThree}
             alt="Third"

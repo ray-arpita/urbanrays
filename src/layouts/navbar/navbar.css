@@ -24,3 +24,12 @@ background-color: grey;
   text-decoration: underline; 
 }
 
+.auth-btn {
+	background: black;
+	color: white;
+	height: 30px;
+	width: 120px;
+  border: none;
+  cursor: pointer;
+}
+

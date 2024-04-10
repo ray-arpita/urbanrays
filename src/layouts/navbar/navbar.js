@@ -2,8 +2,11 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
+  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
+
   return (
     <Grid
       container
@@ -16,6 +19,7 @@ const Navbar = () => {
         paddingInline: "20px",
       }}
     >
+      {/* Left Side */}
       <Grid item>
         <Grid
           container
@@ -43,31 +47,62 @@ const Navbar = () => {
               <Typography fontWeight={"bold"}>About</Typography>
             </NavLink>
           </Grid>
+          <Grid item>
+            <NavLink
+              to="/register"
+              className="menuItem"
+              activeClassName="activeLink"
+            >
+              <Typography fontWeight={"bold"}>Contact</Typography>
+            </NavLink>
+          </Grid>
         </Grid>
       </Grid>
+
+      {/* Middle */}
       <Grid item md={6}>
-        <NavLink to="/" className="menuItem" >
+        <NavLink to="/" className="menuItem">
           <h2 className="logo">URBANRAYS</h2>
         </NavLink>
       </Grid>
-      <Grid
-        item
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          gap: "8px",
-        }}
-      >
-        <NavLink
-          to="/register"
-          className="menuItem"
-          activeClassName="activeLink"
+
+      {/* Right Side */}
+      <Grid item>
+        <Grid
+          container
+          sx={{
+            display: "flex",
+            justifyContent: "space-around",
+            gap: "38px",
+          }}
         >
-          <Typography fontWeight={"bold"} sx={{ margin: "8px" }}>
-            Register
-          </Typography>
-        </NavLink>
-        <Typography></Typography>
+          {isAuthenticated ? (
+            <Typography fontWeight={"bold"}>{user.name}</Typography>
+          ) : null}
+
+          <Grid
+            item
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            {isAuthenticated ? (
+              <button
+                className="auth-btn"
+                onClick={() =>
+                  logout({ logoutParams: { returnTo: window.location.origin } })
+                }
+              >
+                LogOut
+              </button>
+            ) : (
+              <button className="auth-btn" onClick={() => loginWithRedirect()}>
+                LogIn
+              </button>
+            )}
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );
