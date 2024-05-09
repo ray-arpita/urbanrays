@@ -21,30 +21,25 @@ const ProductDetailPage = () => {
   const params = useParams();
   const productId = params?.id;
 
-  console.log(productId, " <<<ID");
   const [productList, setProductList] = useState([]);
   useEffect(() => {
     setProductList(Products);
   }, []);
-
   const IncreaseQuantity = () => {
     setQuantity(quantity + 1);
   };
   const DecreaseQuantity = () => {
     setQuantity(quantity - 1);
   };
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return (
     <Container>
       {productList
         ? productList
             .filter((product) => product.id === parseInt(productId))
             .map((product) => {
-              console.log(product, "<<< PRODUCT");
               return (
                 <Grid container spacing={4} direction={"row"}>
                   <Grid item xs={12} sm={6}>

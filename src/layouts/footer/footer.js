@@ -1,36 +1,90 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
+import { NavLink } from "react-router-dom";
 
 
 const Footer = () => {
   return (
-    <Grid container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' , paddingBlock :  '25px' , alignItems : 'center'}}>
+    <Grid container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingBlock: '25px', paddingInline :'20px', alignItems: 'center' }}>
+      {/* Menu items on the left */}
       <Grid item>
-        <Grid container sx={{ display: 'flex', justifyContent: 'space-around' ,gap : '38px' }}>
-        <Grid item sx={{marginLeft : '8px'}}>
+        <Grid container spacing={2} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+          <Grid item >
+          <NavLink
+              to="/"
+              className="menuItem"
+              activeClassName="activeLink"
+            >
             <Typography fontWeight={'bold'} className='menuItem'>
-            Home
+              Home
             </Typography>
+            </NavLink>
           </Grid>
-          <Grid item sx={{marginLeft : '8px'}}>
+          <Grid item >
+          <NavLink
+              to="/shop"
+              className="menuItem"
+              activeClassName="activeLink"
+            >
             <Typography fontWeight={'bold'} className='menuItem'>
               Shop
             </Typography>
+            </NavLink>
           </Grid>
-          <Grid item  >
+          <Grid item>
+          <NavLink
+              to="/about"
+              className="menuItem"
+              activeClassName="activeLink"
+            >
             <Typography fontWeight={'bold'} className='menuItem'>
               About US
             </Typography>
+            </NavLink>
           </Grid>
         </Grid>
       </Grid>
-      <Grid item md={6}>
+      {/* Centered logo */}
+      <Grid item md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
         <h2 className='logo'>URBANRAYS</h2>
       </Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'space-between' , gap : '8px'}}>
-        <Typography fontWeight={'bold'} sx={{margin :'8px'}} className='menuItem'>Blog</Typography>
-        <Typography fontWeight={'bold'} sx={{margin :'8px'}} className='menuItem'>Terms</Typography>
-        <Typography fontWeight={'bold'} sx={{margin :'8px'}} className='menuItem'>Contact</Typography>
+      {/* Menu items on the right */}
+      <Grid item>
+        <Grid container spacing={2} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+          <Grid item >
+          <NavLink
+              to="/blog"
+              className="menuItem"
+              activeClassName="activeLink"
+            >
+            <Typography fontWeight={'bold'} className='menuItem'>
+              Blog
+            </Typography>
+            </NavLink>
+          </Grid>
+          <Grid item >
+          <NavLink
+              to="/terms"
+              className="menuItem"
+              activeClassName="activeLink"
+            >
+            <Typography fontWeight={'bold'} className='menuItem'>
+              Terms
+            </Typography>
+            </NavLink>
+          </Grid>
+          <Grid item>
+          <NavLink
+              to="/contact"
+              className="menuItem"
+              activeClassName="activeLink"
+            >
+            <Typography fontWeight={'bold'} className='menuItem'>
+              Contact
+            </Typography>
+            </NavLink>
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );

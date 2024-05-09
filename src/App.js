@@ -1,4 +1,3 @@
-import "./App.css";
 import Main from "./layouts/main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/about/about";
@@ -7,26 +6,25 @@ import Shop from "./pages/shop/shop";
 import Register from "./pages/register/register";
 import ProductDetailPage from "./pages/detailPage/detailPage";
 import TermsAndConditions from "./pages/terms&conditions/t&c";
-import CustomCursor from "./components/custom-cursor/customCursor";
+import Blog from "./pages/blog/blog";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
         <Routes>
           <Route element={<Layout/>}>
             <Route index element={<Main />} />
             <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/contact" element={<Register />} />
             <Route path="/product-detail/:id" element={<ProductDetailPage />} />
             <Route path='/terms' element={<TermsAndConditions/>} />
+            <Route path='/blog' element={<Blog/>} />
           </Route>
         </Routes>
-      </BrowserRouter>
-      {/* <CustomCursor/> */}
-    </div>
+      </BrowserRouter> 
+    </>
   );
 }
-
 export default App;

@@ -18,9 +18,6 @@ const Register = () => {
 
   const dispatch = useDispatch();
 
-  const USER = encryptData("ARPITA RAY");
-  console.log(USER, "<< USER");
-
   const userData = useSelector((state) => state.register);
   const { values, handleChange, handleBlur, errors, handleSubmit, touched } =
     useFormik({

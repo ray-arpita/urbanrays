@@ -14,7 +14,11 @@
     cursor: pointer;
     animation: pulse 1.5s infinite;
   }
-  
+  .cardImage:hover {
+    filter: grayscale(100%);
+  }
+
+
  
   @keyframes pulse {
     0% {

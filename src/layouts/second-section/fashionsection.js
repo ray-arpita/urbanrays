@@ -15,7 +15,7 @@ const FashionSection = () => {
         {/* First Column */}
         <Grid item xs={12} sm={6} md={4}>
           <Typography className="label">
-            FOR YOUR <br /> ESSENTIAL <br /> STYLE
+            FOR YOUR<br/> ESSENTIAL STYLE
           </Typography>
           <img
             src={imageOne}
@@ -51,6 +51,9 @@ const FashionSection = () => {
             className="grid-image"
             style={{ height: "50%" }}
           />
+          <Typography className="label" textAlign={'center'}>
+          EMBRACE YOUR<br/> UNIQUE LOOK
+          </Typography>
         </Grid>
       </Grid>
     </div>

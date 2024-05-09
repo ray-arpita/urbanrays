@@ -1,38 +1,39 @@
 import React from "react";
-import { Grid, Typography } from '@mui/material'
+import { Grid, Typography } from "@mui/material";
 import CustomButton from "../../components/button/button";
+import { useTranslation } from "react-i18next";
 
 const Newsletter = () => {
+  const { t } = useTranslation();
   return (
-    <Grid container sx={{ backgroundColor: "black" }}>
-      <Grid item p={10} md={5.5} sm={12} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-      <Grid container spacing={3} display={'flex'} flexDirection={'column'} >
-          <Grid item >
+    <Grid container sx={{ backgroundColor: "black" }} textAlign={'center'}>
+      <Grid item p={10} md={6} sm={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+        <Grid container spacing={3} display={"flex"} flexDirection={"column"}>
+          <Grid item>
             <Typography variant="h4" color="white">
-              SIGNUP TO OUR NEWSLETTER!
+              {t("subToNews")}
             </Typography>
           </Grid>
           <Grid item>
-            <Typography color="white">$10 off on your first order</Typography>
+            <Typography color="white">{t("offer")}</Typography>
           </Grid>
           <Grid item>
-            <CustomButton label={'Subscribe'} backgroundColor={'black'} color={'white'} borderColor={'#FFFF'} />
+            <CustomButton label={"Subscribe"} backgroundColor={"black"} color={"white"} borderColor={"#FFFF"}/>
           </Grid>
         </Grid>
       </Grid>
-      <div style={{ borderLeft: '1px solid white', height: '100%', margin: '0 auto' }} />
-      <Grid item p={10} md={5.5} sm={12} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-        <Grid container spacing={2} display={'flex'} flexDirection={'column'} >
+      <Grid item p={10} md={6} sm={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+        <Grid container spacing={2} display={"flex"} flexDirection={"column"}>
           <Grid item>
             <Typography variant="h3" color="white">
-              NEWS
+              {t("news")}
             </Typography>
           </Grid>
           <Grid item>
-            <Typography color="white">Discover All our news</Typography>
+            <Typography color="white">{t("discoverNews")}</Typography>
           </Grid>
           <Grid item>
-            <CustomButton label={'Subscribe'} backgroundColor={'#FFFF'} color={'black'} />
+            <CustomButton label={"Subscribe"} backgroundColor={"#FFFF"} color={"black"}/>
           </Grid>
         </Grid>
       </Grid>

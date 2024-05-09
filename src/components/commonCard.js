@@ -1,21 +1,17 @@
 import * as React from "react";
-import { Card, Typography } from "@mui/material";
+import {Typography } from "@mui/material";
 import "./commonCard.css";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import StarRatings from "react-star-ratings";
 import { Link } from "react-router-dom";
 
-const CommonCard = ({ title, price, rating, image , description}) => {
-
-
+const CommonCard = ({ title, price, rating, image, description }) => {
   const AddToCart = () => {
-    alert('Product Added To Cart ')
+    alert("Product Added To Cart ");
   };
-  
 
   return (
     <>
-       
       <div
         style={{
           backgroundColor: "white",
@@ -23,12 +19,12 @@ const CommonCard = ({ title, price, rating, image , description}) => {
           maxWidth: "280px",
           padding: "10px",
           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
-        
+          cursor: "pointer",
         }}
       >
         <div>
           <div style={{ position: "relative" }}>
-            <img src={image} className="cardImage" />
+            <img src={image} className="cardImage"   style={{ width: "100%", objectFit: "cover" }}/>
             <ShoppingBagOutlinedIcon
               className="addToCartIcon"
               onClick={AddToCart}
@@ -54,22 +50,20 @@ const CommonCard = ({ title, price, rating, image , description}) => {
           </div>
           <div>
             <StarRatings
-              rating={rating} 
-              starRatedColor="black" 
-              numberOfStars={5} 
+              rating={rating}
+              starRatedColor="black"
+              numberOfStars={5}
               starDimension="20px"
               starSpacing="2px"
             />
           </div>
           <div>
-            <Typography fontSize={'14px'}>
-            {description ? description : null}
+            <Typography fontSize={"14px"} color={"dimgrey"}>
+              {description ? description : null}
             </Typography>
           </div>
-    
         </div>
       </div>
-     
     </>
   );
 };

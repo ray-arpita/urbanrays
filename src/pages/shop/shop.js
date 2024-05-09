@@ -13,13 +13,22 @@ const Shop = () => {
   const [productList, setProductList] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const filterKey = searchParams.get("category"); //key
-  console.log(searchParams.get("category"), "<<< SEARCH PARAMS");
 
   const DisplayProducts = filterKey
     ? productList.filter(
         (product) => product.category.toLowerCase() == filterKey
       )
     : productList;
+
+  const truncateDescription = (description) => {
+    const words = description.split(" ");
+    const truncated = words.slice(0, 10).join(" ");
+    if (words.length > 10) {
+      return `${truncated} ...`;
+    } else {
+      return truncated;
+    }
+  };
 
   useEffect(() => {
     setProductList(Products);
@@ -33,6 +42,7 @@ const Shop = () => {
         fontSize={"22px"}
         className="subheader"
         py={3}
+        textAlign={'center'}
       >
         Explore Now With Our Best Collections
       </Typography>
@@ -59,22 +69,20 @@ const Shop = () => {
           </Link>
         ) : null}
       </div>
-      <div
-        style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
-      >
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {DisplayProducts?.length > 0 ? (
           DisplayProducts.map((product) => (
+            <a href={`/product-detail/${product.id}`}>
             <Box key={product.id} p={2}>
-              <Link to={`/product-detail/${product.id}`}>
-                <CommonCard
-                  title={product?.productTitle}
-                  price={product?.price}
-                  rating={product?.rating}
-                  image={product?.productImage}
-                  description={product?.description}
-                />
-              </Link>
+              <CommonCard
+                title={product?.productTitle}
+                price={product?.price}
+                rating={product?.rating}
+                image={product?.productImage}
+                description={truncateDescription(product?.description)}
+              />
             </Box>
+             </a>
           ))
         ) : (
           <div
