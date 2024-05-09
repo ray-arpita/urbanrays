@@ -72,7 +72,7 @@ const Shop = () => {
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {DisplayProducts?.length > 0 ? (
           DisplayProducts.map((product) => (
-            <a href={`/product-detail/${product.id}`}>
+            <Link to={`/product-detail/${product.id}`}>
             <Box key={product.id} p={2}>
               <CommonCard
                 title={product?.productTitle}
@@ -82,7 +82,7 @@ const Shop = () => {
                 description={truncateDescription(product?.description)}
               />
             </Box>
-             </a>
+             </Link>
           ))
         ) : (
           <div

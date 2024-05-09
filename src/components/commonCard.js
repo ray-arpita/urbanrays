@@ -3,7 +3,7 @@ import {Typography } from "@mui/material";
 import "./commonCard.css";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import StarRatings from "react-star-ratings";
-import { Link } from "react-router-dom";
+
 
 const CommonCard = ({ title, price, rating, image, description }) => {
   const AddToCart = () => {
