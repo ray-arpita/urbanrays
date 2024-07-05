@@ -9,6 +9,7 @@ import TermsAndConditions from "./pages/terms&conditions/t&c";
 import Blog from "./pages/blog/blog";
 
 function App() {
+  console.log(process.env.REACT_APP_SECRET_KEY)
   return (
     <>
       <BrowserRouter>
