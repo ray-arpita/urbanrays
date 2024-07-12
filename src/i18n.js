@@ -8,7 +8,7 @@ const language = localStorage.getItem("lang");
 //LanguageDetector is a middleware to detect the currect language and change accordingly
 i18n.use(LanguageDetector).use(initReactI18next).init({
     debug : true,
-    lng : language,
+    lng : "en",
     fallbackLng : "en",
     resources : {
         en : {

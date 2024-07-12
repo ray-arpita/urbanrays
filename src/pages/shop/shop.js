@@ -8,6 +8,7 @@ import CustomButton from "../../components/button/button";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import { useSearchParams, Link } from "react-router-dom";
+import { Grid } from "@mui/material";
 
 const Shop = () => {
   const [productList, setProductList] = useState([]);
@@ -37,23 +38,11 @@ const Shop = () => {
   return (
     <>
       <Divider />
-      <Typography
-        fontWeight={"bold"}
-        fontSize={"22px"}
-        className="subheader"
-        py={3}
-        textAlign={'center'}
-      >
+      <Typography fontWeight={"bold"} fontSize={"22px"} className="subheader" py={3} textAlign={'center'}>
         Explore Now With Our Best Collections
       </Typography>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "3%",
-          paddingTop: "8px",
-        }}
-      >
+        style={{ display: "flex", flexWrap:'wrap', justifyContent: "center", gap: "10px", paddingTop: "8px",}}>
         <div onClick={() => setSearchParams({ category: "sunglasses" })}>
           <CustomButton label={"Sunglasses"} />
         </div>
@@ -63,16 +52,19 @@ const Shop = () => {
         <Link to="?category=shoes">
           <CustomButton label={"Shoes"} />
         </Link>
+
+
         {filterKey ? (
           <Link to=".">
             <CustomButton label={"Show All"} />
           </Link>
         ) : null}
       </div>
+
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {DisplayProducts?.length > 0 ? (
           DisplayProducts.map((product) => (
-            <Link to={`/product-detail/${product.id}`}>
+            <Link className="cardText" to={`/product-detail/${product.id}`}>
             <Box key={product.id} p={2}>
               <CommonCard
                 title={product?.productTitle}
@@ -82,7 +74,7 @@ const Shop = () => {
                 description={truncateDescription(product?.description)}
               />
             </Box>
-             </Link>
+              </Link>
           ))
         ) : (
           <div

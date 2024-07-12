@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography , Avatar } from "@mui/material";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -22,6 +22,7 @@ const Navbar = () => {
   ];
 
   return (
+    <header>
     <Grid container alignItems="center" justifyContent="space-between" sx={{paddingBlock: "15px",paddingInline: "20px",}}>
       {/* Left Side */}
       <Grid item>
@@ -73,10 +74,6 @@ const Navbar = () => {
               ))}
             </select>
           </Grid>
-          {isAuthenticated ? (
-            <Typography fontWeight={"bold"}>{user.name}</Typography>
-          ) : null}
-
           <Grid
             item
             sx={{
@@ -99,9 +96,16 @@ const Navbar = () => {
               </button>
             )}
           </Grid>
+          <Grid item>
+          {isAuthenticated ? (
+            // <Typography fontWeight={"bold"}>{user.name}</Typography>
+            <Avatar sx={{ bgcolor: 'black' }}>AR</Avatar>
+          ) : null}
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
+    </header>
   );
 };
 
