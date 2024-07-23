@@ -5,3 +5,5 @@
 .activeLink {background-color: grey; text-decoration: underline;}
 .auth-btn {background: black;color: white;height: 30px;width: 120px;border: none;cursor: pointer;}
 .dropdown{background-color: #000;color: white; width: 90px;height: 30px;}
+.cart-icon { animation: pulse 1.5s infinite;}
+.cart-sec{display: flex;justify-content: center;align-items: center;}

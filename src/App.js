@@ -7,9 +7,9 @@ import Register from "./pages/register/register";
 import ProductDetailPage from "./pages/detailPage/detailPage";
 import TermsAndConditions from "./pages/terms&conditions/t&c";
 import Blog from "./pages/blog/blog";
+import Cart from "./pages/cart/cart";
 
 function App() {
-  console.log(process.env.REACT_APP_SECRET_KEY)
   return (
     <>
       <BrowserRouter>
@@ -22,6 +22,7 @@ function App() {
             <Route path="/product-detail/:id" element={<ProductDetailPage />} />
             <Route path='/terms' element={<TermsAndConditions/>} />
             <Route path='/blog' element={<Blog/>} />
+            <Route path='/cart' element={<Cart/>} />
           </Route>
         </Routes>
       </BrowserRouter> 

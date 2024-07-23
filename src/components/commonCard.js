@@ -3,11 +3,25 @@ import {Typography } from "@mui/material";
 import "./commonCard.css";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import StarRatings from "react-star-ratings";
-
+import { addToCart } from "../Store/slices/cart.Slice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const CommonCard = ({ title, price, rating, image, description }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+
   const AddToCart = () => {
-    alert("Product Added To Cart ");
+    const product = {
+      title,
+      price,
+      rating,
+      image,
+      description,
+    };
+    dispatch(addToCart(product));
+    navigate('/cart')
   };
 
   return (
