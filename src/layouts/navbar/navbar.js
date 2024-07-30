@@ -15,8 +15,6 @@ const Navbar = () => {
     return store.cart.length;
   } )
 
-  console.log(cartLength , "<< CART LENGTH")
-
   const changeLanguage = (code) => {
     setLanguage(code);
     localStorage.setItem("lang", code);

@@ -5,14 +5,15 @@ import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import StarRatings from "react-star-ratings";
 import { addToCart } from "../Store/slices/cart.Slice";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const CommonCard = ({ title, price, rating, image, description }) => {
+const CommonCard = ({ title, price, rating, image, description,link }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
 
-  const AddToCart = () => {
+  const AddToCart = (e) => {
+    e.stopPropagation();
     const product = {
       title,
       price,
@@ -38,7 +39,9 @@ const CommonCard = ({ title, price, rating, image, description }) => {
       >
         <div>
           <div style={{ position: "relative" }}>
+            <Link to={link}>
             <img src={image} className="cardImage"   style={{ width: "100%", objectFit: "cover" }}/>
+            </Link>
             <ShoppingBagOutlinedIcon
               className="addToCartIcon"
               onClick={AddToCart}
@@ -52,9 +55,11 @@ const CommonCard = ({ title, price, rating, image, description }) => {
                 alignItems: "center",
               }}
             >
+              <Link to={link} className="cardText">
               <div>
                 <Typography className="cardText">{title}</Typography>
               </div>
+              </Link>
               <div>
                 <Typography className="cardText">
                   <p>{`$${price}`}</p>

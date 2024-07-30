@@ -72,6 +72,7 @@ const Shop = () => {
                 rating={product?.rating}
                 image={product?.productImage}
                 description={truncateDescription(product?.description)}
+                link = {`/product-detail/${product.id}`}
               />
             </Box>
               // </Link>

@@ -96,7 +96,7 @@ const ShowcaseSection = () => {
   };
 
   return (
-    <div ref={containerRef}>
+    <section ref={containerRef}>
       {loading ? (
         <div style={{display : 'flex' , justifyContent : 'center' }}>
           <CircularProgress
@@ -160,7 +160,7 @@ const ShowcaseSection = () => {
           </Slider>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

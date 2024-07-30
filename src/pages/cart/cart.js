@@ -97,7 +97,7 @@ const Cart = () => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          mt={5}
+          p={10}
         >
           <ErrorOutline fontSize="large" />
           <Typography variant="h6">Your cart is currently empty!</Typography>

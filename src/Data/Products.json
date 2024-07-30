@@ -1,0 +1,323 @@
+{
+  "1": {
+    "productTitle": "Stylish Aviator Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass1.jpg",
+    "product": "Sunglasses",
+    "price": 29.99,
+    "rating": 4.5,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Enhance your style with these stylish aviator sunglasses. Perfect for any occasion, these sunglasses are a must-have accessory."
+  },
+  "2": {
+    "productTitle": "Classic Wayfarer Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass2.jpg",
+    "product": "Sunglasses",
+    "price": 39.99,
+    "rating": 4.3,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Achieve a timeless look with these classic wayfarer sunglasses. The perfect blend of style and functionality for both men and women."
+  },
+  "3": {
+    "productTitle": "Polarized Sport Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass3.jpg",
+    "product": "Sunglasses",
+    "price": 45.99,
+    "rating": 4.6,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Take on the outdoors with confidence in these polarized sport sunglasses. Designed for the active lifestyle, providing both style and protection."
+  },
+  "4": {
+    "productTitle": "Retro Round Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass4.jpg",
+    "product": "Sunglasses",
+    "price": 32.99,
+    "rating": 4.2,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Add a touch of vintage charm to your look with these retro round sunglasses. Timeless style that complements any outfit."
+  },
+  "5": {
+    "productTitle": "Clubmaster Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass5.jpg",
+    "product": "Sunglasses",
+    "price": 37.99,
+    "rating": 4.3,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Make a statement with these clubmaster sunglasses. A perfect blend of sophistication and trendiness for any fashion-forward individual."
+  },
+  "6": {
+    "productTitle": "Oversized Square Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass6.jpg",
+    "product": "Sunglasses",
+    "price": 42.99,
+    "rating": 4.1,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Step into the spotlight with these oversized square sunglasses. Bold and chic, these sunglasses are perfect for making a fashion statement."
+  },
+  "7": {
+    "productTitle": "Vintage Round Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass7.jpg",
+    "product": "Sunglasses",
+    "price": 35.99,
+    "rating": 4.7,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Capture the essence of retro style with these vintage round sunglasses. Timeless design for those who appreciate classic fashion."
+  },
+  "8": {
+    "productTitle": "Modern Cat Eye Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass8.jpg",
+    "product": "Sunglasses",
+    "price": 49.99,
+    "rating": 4.4,
+    "category": "Sunglasses",
+    "gender": "Female",
+    "description": "Elevate your elegance with these modern cat eye sunglasses. A perfect accessory for the modern woman who values both style and sophistication."
+  },
+  "9": {
+    "productTitle": "Sport Wraparound Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass9.jpg",
+    "product": "Sunglasses",
+    "price": 54.99,
+    "rating": 4.2,
+    "category": "Sunglasses",
+    "gender": "Male",
+    "description": "Embrace an active lifestyle with these sport wraparound sunglasses. Designed for comfort and durability, ideal for the active man on the go."
+  },
+  "10": {
+    "productTitle": "Rimless Fashion Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass10.jpg",
+    "product": "Sunglasses",
+    "price": 28.99,
+    "rating": 4.6,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Stay on-trend with these rimless fashion sunglasses. A sleek and modern design that complements any fashion-forward individual."
+  },
+  "11": {
+    "productTitle": "Hexagonal Frame Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass11.jpg",
+    "product": "Sunglasses",
+    "price": 36.99,
+    "rating": 4.0,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Make a bold statement with these hexagonal frame sunglasses. Unique and stylish, perfect for those who dare to be different."
+  },
+  "12": {
+    "productTitle": "Round Retro Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass12.jpg",
+    "product": "Sunglasses",
+    "price": 31.99,
+    "rating": 4.5,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Channel vintage vibes with these round retro sunglasses. A classic choice for those who appreciate timeless fashion."
+  },
+  "13": {
+    "productTitle": "Square Frame Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass13.jpg",
+    "product": "Sunglasses",
+    "price": 38.99,
+    "rating": 4.1,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Step into the modern era with these square frame sunglasses. A contemporary design that adds an edge to your everyday look."
+  },
+  "14": {
+    "productTitle": "Pilot Aviator Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass14.jpg",
+    "product": "Sunglasses",
+    "price": 44.99,
+    "rating": 4.7,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Embrace a classic aviator style with these pilot aviator sunglasses. Timeless and versatile, these sunglasses complement any outfit."
+  },
+  "15": {
+    "productTitle": "Butterfly Shape Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass15.jpg",
+    "product": "Sunglasses",
+    "price": 39.99,
+    "rating": 4.4,
+    "category": "Sunglasses",
+    "gender": "Female",
+    "description": "Add a touch of glamour with these butterfly shape sunglasses. Designed for the modern woman who loves to stand out with style."
+  },
+  "16": {
+    "productTitle": "Gradient Lens Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass16.jpg",
+    "product": "Sunglasses",
+    "price": 33.99,
+    "rating": 4.8,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Experience a seamless blend of style and functionality with these gradient lens sunglasses. A versatile accessory for any occasion."
+  },
+  "17": {
+    "productTitle": "Geometric Frame Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass17.jpg",
+    "product": "Sunglasses",
+    "price": 29.99,
+    "rating": 4.2,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Make a bold fashion statement with these geometric frame sunglasses. A modern design for those who appreciate cutting-edge style."
+  },
+  "18": {
+    "productTitle": "Wraparound Shield Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass18.jpg",
+    "product": "Sunglasses",
+    "price": 47.99,
+    "rating": 4.5,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Command attention with these wraparound shield sunglasses. A dynamic and sporty choice for those who embrace an active lifestyle."
+  },
+  "19": {
+    "productTitle": "Cat-Eye Oversized Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass19.jpg",
+    "product": "Sunglasses",
+    "price": 41.99,
+    "rating": 4.3,
+    "category": "Sunglasses",
+    "gender": "Female",
+    "description": "Make a bold statement with these cat-eye oversized sunglasses. A fashionable accessory for the modern woman who loves to stand out."
+  },
+  "20": {
+    "productTitle": "Minimalist Round Sunglasses",
+    "productImage": "../assets/sunglasses/sunglass20.jpg",
+    "product": "Sunglasses",
+    "price": 34.99,
+    "rating": 4.1,
+    "category": "Sunglasses",
+    "gender": "Unisex",
+    "description": "Achieve a sleek and modern look with these minimalist round sunglasses. A versatile accessory that complements any outfit."
+  },
+  "21": {
+    "productTitle": "Classic Black Leather",
+    "productImage": "../assets/shoes/shoe1.jpg",
+    "product": "Shoes",
+    "price": 79
+  },
+  "22": {
+    "productTitle": "Vintage Brown Boots",
+    "productImage": "../assets/shoes/shoe2.jpg",
+    "product": "Shoes",
+    "price": 95
+  },
+  "23": {
+    "productTitle": "White Running Shoes",
+    "productImage": "../assets/shoes/shoe3.jpg",
+    "product": "Shoes",
+    "price": 60
+  },
+  "24": {
+    "productTitle": "Red High Heels",
+    "productImage": "../assets/shoes/shoe4.jpg",
+    "product": "Shoes",
+    "price": 120
+  },
+  "25": {
+    "productTitle": "Blue Sneakers",
+    "productImage": "../assets/shoes/shoe5.jpg",
+    "product": "Shoes",
+    "price": 75
+  },
+  "26": {
+    "productTitle": "Black Dress Shoes",
+    "productImage": "../assets/shoes/shoe6.jpg",
+    "product": "Shoes",
+    "price": 85
+  },
+  "27": {
+    "productTitle": "Green Sandals",
+    "productImage": "../assets/shoes/shoe7.jpg",
+    "product": "Shoes",
+    "price": 45
+  },
+  "28": {
+    "productTitle": "Yellow Rain Boots",
+    "productImage": "../assets/shoes/shoe8.jpg",
+    "product": "Shoes",
+    "price": 70
+  },
+  "29": {
+    "productTitle": "Casual Loafer",
+    "productImage": "../assets/shoes/shoe9.jpg",
+    "product": "Shoes",
+    "price": 57
+  },
+  "30": {
+    "productTitle": "Elegant Black Flats",
+    "productImage": "../assets/shoes/shoe10.jpg",
+    "product": "Shoes",
+    "price": 65
+  },
+  "31": {
+    "productTitle": "White Tennis Shoes",
+    "productImage": "../assets/shoes/shoe11.jpg",
+    "product": "Shoes",
+    "price": 55
+  },
+  "32": {
+    "productTitle": "Red Stilettos",
+    "productImage": "../assets/shoes/shoe12.jpg",
+    "product": "Shoes",
+    "price": 110
+  },
+  "33": {
+    "productTitle": "Blue Casual Sneakers",
+    "productImage": "../assets/shoes/shoe13.jpg",
+    "product": "Shoes",
+    "price": 65
+  },
+  "34": {
+    "productTitle": "Black Formal Shoes",
+    "productImage": "../assets/shoes/shoe14.jpg",
+    "product": "Shoes",
+    "price": 90
+  },
+  "35": {
+    "productTitle": "Brown Hiking Boots",
+    "productImage": "../assets/shoes/shoe15.jpg",
+    "product": "Shoes",
+    "price": 130
+  },
+  "36": {
+    "productTitle": "Pink Ballet Flats",
+    "productImage": "../assets/shoes/shoe16.jpg",
+    "product": "Shoes",
+    "price": 50
+  },
+  "37": {
+    "productTitle": "Gray Athletic Shoes",
+    "productImage": "../assets/shoes/shoe17.jpg",
+    "product": "Shoes",
+    "price": 70
+  },
+  "38": {
+    "productTitle": "Orange Beach Sandals",
+    "productImage": "../assets/shoes/shoe18.jpg",
+    "product": "Shoes",
+    "price": 40
+  },
+  "39": {
+    "productTitle": "Purple Rain Boots",
+    "productImage": "../assets/shoes/shoe19.jpg",
+    "product": "Shoes",
+    "price": 75
+  },
+  "40": {
+    "productTitle": "Beige Slip-on Shoes",
+    "productImage": "../assets/shoes/shoe20.jpg",
+    "product": "Shoes",
+    "price": 60
+  }
+}
+

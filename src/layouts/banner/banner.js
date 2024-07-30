@@ -6,9 +6,9 @@ const Banner = () => {
   return (
     <>
     {/*Banner Section*/}
-    <div style={{  width : '100%' , height : '430px'}}>
+    <section style={{  width : '100%' , height : '430px'}}>
     <img src={banner_image} alt='banner' style={{width : '100%' ,height : '100%' , objectFit : 'cover' , objectPosition : 'center'}}/>
-    </div>
+    </section>
     {/*Banner Section End*/}
     </>
   )
